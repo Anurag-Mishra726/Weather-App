@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="assets/image/weather-news.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/b77bca94fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="row1">
+            <div class="theme">
+                <button type="button left-btn" name="Theme Button" class="mode"><span class="circle-shape"></span></button>
+                <p class="mode-info">Light Mode</p>
+            </div>
+            <div class="search">
+                <input  type="text" spellcheck="false" id="input" class="input-box" placeholder="Search for your preferred city.. ">
+                <button type="button" class="search-icon middle-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="current-location"><button name="Current Location" class="current-location-button right-btn" type="button"><i class="fa-solid fa-location-crosshairs"></i> Current Location</button></div>
+        </div>
+    </header>
+
+    <section class="section-one">
+        <div class="container-one light-box-shadow">
+            <div class="location-name"><h2 id="current_location">Loading location...</h2></div>
+            <div class="date-time">
+                <div class="time"><h1 id="current_time">--</h1></div>
+                <div class="date"><h5 id="current_date">--</h5></div>
+            </div>
+        </div>
+        <div class="container-two light-box-shadow">
+            <div class="temperature">
+                <div class="temp">
+                    <div class="actual-temp "><h2 id="current_temp">--°C</h2></div>
+                    <div class="feel-temp "><h4 id="current_temp2">Feels like: --°C </h4></div>
+                </div>
+                <div class="sunrise">
+                    <div class="sun-rise">
+                        <div class="sunrise-icon white-filter"><img src="assets/image/sunrise (1).png" alt="Sunrise" style="height: 50px;" ></div>
+                        <div class="sunrise-info">
+                            <div>Sunrise</div>
+                            <div class="sunrise-time">--</div> 
+                        </div>
+                    </div>
+                    <div class="sun-set">
+                        <div class="sunsets-icon white-filter"><img src="assets/image/sunset (1).png" alt="Sun-Set" style="height: 50px;" ></div>
+                        <div class="sunsets-info">
+                            <div>Sunset</div>
+                            <div class="sunset-time">--</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="temp-img">
+                <div class="weather-icon"><img id="weather_icon" src="" alt="Weather"></div>
+                <div class="weather-info">--</div>
+            </div>
+            <div class="temp-info">
+                <div class="info-one">
+                    <div class="humidity position">
+                        <div class="humidity-icon white-filter"><img src="assets/image/new-humidity(1).png" alt="" style="height: 50px;">
+                        </div>
+                        <div class="humidity-info">
+                            <p class="humidity-persentage">--%</p>
+                            <p>Humidity</p>
+                        </div>
+                   </div>
+                   <div class="pressure position">
+                        <div class="pressure--icon white-filter"><img src="assets/image/barometer.png" alt="" style="height: 50px;"></div>
+                        <div class="pressure-info">
+                            <p class="pressure-amount">--hPa</p>
+                            <p>Pressure</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-two">
+                    <div class="wind-speed position">
+                        <div class="wind-icon white-filter"><img src="assets/image/wind.png" alt="" style="height: 50px;"></div>
+                        <div class="wind-info">
+                            <p class="wind_speed">--km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="uv position">
+                        <div class="uv-icon white-filter"><img src="assets/image/ultra-violet.png" alt="" style="height: 50px;"></div>
+                        <div class="uv-info">
+                            <p class="uv-amount">--</p>
+                            <p>UV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-two">
+        <div class="container-three light-box-shadow">
+            <div class="forecast-days"><h2>5 Days Forecast:</h2></div>
+            <div class="forecast-days-info">
+                <div class="day-1 days-position">
+                    <div class="day-img"><img id="daily_icon" src="" alt="" style="width: 50px;"></div>
+                    <div class="day-temp">--°C</div>
+                    <div class="day-date">--</div>
+                </div>
+                <div class="day-2 days-position">
+                    <div class="day-img"><img id="daily_icon" src="" alt="" style="width: 50px;"></div>
+                    <div class="day-temp">--°C</div>
+                    <div class="day-date">--</div>
+                </div>
+                <div class="day-3 days-position">
+                    <div class="day-img"><img id="daily_icon" src="" alt="" style="width: 50px;"></div>
+                    <div class="day-temp">--°C</div>
+                    <div class="day-date">--</div>
+                </div>
+                <div class="day-4 days-position">
+                    <div class="day-img"><img id="daily_icon" src="" alt="" style="width: 50px;"></div>
+                    <div class="day-temp">--°C</div>
+                    <div class="day-date">--</div>
+                </div>
+                <div class="day-5 days-position">
+                    <div class="day-img"><img id="daily_icon" src="" alt="" style="width: 50px;"></div>
+                    <div class="day-temp">--°C</div>
+                    <div class="day-date">--</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-four light-box-shadow">
+            <div class="forecast-hourly"><h2>Hourly Forecast:</h2></div>
+            <div class="forecast-hourly-info">
+                <div class="hour-1 hourly-position-bg">
+                    <div class="hourly-time">6 AM</div>
+                    <div class="hourly-img"><img id="hourly_img" src="" alt="" ></div>
+                    <div class="hourly-temp">--°C</div>
+                    <div class="hourly-arrow"><img src="assets/image/arrow2.png" alt="" ></div>
+                    <div class="hourly-windspeed">--km/h</div>
+                </div>
+                <div class="hour-2 hourly-position-bg">
+                    <div class="hourly-time">9 AM</div>
+                    <div class="hourly-img"><img id="hourly_img" src="" alt="" ></div>
+                    <div class="hourly-temp">26°C</div>
+                    <div class="hourly-arrow rotate1"><img src="assets/image/arrow2.png" alt="" s></div>
+                    <div class="hourly-windspeed">4km/h</div>
+                </div>
+                <div class="hour-3 hourly-position-bg">
+                    <div class="hourly-time">12 PM</div>
+                    <div class="hourly-img"><img id="hourly_img" src="" alt="" ></div>
+                    <div class="hourly-temp">-°C</div>
+                    <div class="hourly-arrow"><img src="assets/image/arrow2.png" alt="" ></div>
+                    <div class="hourly-windspeed">-km/h</div>
+                </div>
+                <div class="hour-4 hourly-position-bg">
+                    <div class="hourly-time">3 PM</div>
+                    <div class="hourly-img"><img id="hourly_img" src="" alt="" ></div>
+                    <div class="hourly-temp">--°C</div>
+                    <div class="hourly-arrow rotate2"><img src="" alt="" ></div>
+                    <div class="hourly-windspeed">--km/h</div>
+                </div>
+                <div class="hour-5 hourly-position-bg">
+                    <div class="hourly-time">6 PM</div>
+                    <div class="hourly-img"><img id="hourly_img" src="" alt="" ></div>
+                    <div class="hourly-temp">--°C</div>
+                    <div class="hourly-arrow"><img src="assets/image/arrow2.png" alt="" ></div>
+                    <div class="hourly-windspeed">--km/h</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
