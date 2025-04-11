@@ -176,7 +176,7 @@ function enableLightMode() {
 }
 
 const newapiKey ="6b6ac27efc294086a91191233250804";
-const apiUrlOfDays = "http://api.weatherapi.com/v1/forecast.json?&days=5&aqi=no&alerts=no&q="; //{city name}&cnt={cnt}&appid={API key}
+const apiUrlOfDays = "https://api.weatherapi.com/v1/forecast.json?&days=5&aqi=no&alerts=no&q="; //{city name}&cnt={cnt}&appid={API key}
 
 let inputBox = document.querySelector(".input-box");
 
