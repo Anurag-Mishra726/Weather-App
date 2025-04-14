@@ -4,12 +4,12 @@ A simple and clean web-based Weather App that allows users to check real-time we
 
 ## 🚀 Features
 
-- 🌍 Search for weather by city name
-- ☀️ Shows temperature, weather conditions, and icons
-- 🌐 Real-time data fetched using weather API
-- 🎨 Clean and responsive user interface
-- 📦 Organized project structure with HTML, CSS, JS and asset files
-
+- 🌍 Search weather by city name
+- 🌡️ Real-time temperature, humidity, wind speed
+- 🌤️ Weather icons and condition descriptions
+- 🕒 Displays current date and time of searched city
+- 💡 Light/Dark mode support
+- 📱 Fully responsive design for all devices
 
 
 ## 🛠️ Technologies Used
@@ -19,3 +19,7 @@ A simple and clean web-based Weather App that allows users to check real-time we
 - JavaScript
 - weatherAPI
 - Git & GitHub for version control
+
+🔗 Live Demo
+
+🎉 Try it live here: [https://skyzoneapp.netlify.app](https://skyzoneapp.netlify.app/)
