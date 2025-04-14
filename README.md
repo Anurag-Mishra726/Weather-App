@@ -23,3 +23,4 @@ A simple and clean web-based Weather App that allows users to check real-time we
 🔗 Live Demo
 
 🎉 Try it live here: [https://skyzoneapp.netlify.app](https://skyzoneapp.netlify.app/)
+or  https://anurag-mishra726.github.io/Weather-App/
